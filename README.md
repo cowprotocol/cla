@@ -1,7 +1,7 @@
-# Cow Services Contributor License Agreement
+# Nomev Labs Contributor License Agreement
 
-This repository contains the Cow Services CLA.
-The full document can be found [here](./Cow%20Services%20CLA.md).
+This repository contains the Nomev Labs CLA.
+The full document can be found [here](./Nomev%20Labs%20CLA.md).
 
 ## GitHub Action Setup
 
@@ -47,7 +47,7 @@ and automatically exempt team members and bots.
             with:
               branch: 'cla-signatures'
               path-to-signatures: 'signatures/version1/cla.json'
-              path-to-document: 'https://github.com/cowprotocol/cla/blob/main/Cow%20Services%20CLA.md'
+              path-to-document: 'https://github.com/cowprotocol/cla/blob/main/Nomev%20Labs%20CLA.md'
               allowlist: '${{ steps.team.outputs.result }},*[bot]'
     ```
 2. Create the branch `cla-signatures` where the signatures JSON will be updated:
