@@ -10,7 +10,7 @@ signatures in a repository.
 
 The following steps describe how to enable a
 ["lite" version of the CLA Assistant](https://github.com/contributor-assistant/github-action)
-and automatically exempt team members and bots.
+and automatically exempt bots.
 
 1. Add a GitHub Action workflow file at `.github/workflows/cla.yml`:
    ```yml
