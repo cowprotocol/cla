@@ -22,6 +22,12 @@ and automatically exempt bots.
      pull_request_target:
        types: [opened, closed, synchronize]
 
+   permissions:
+     actions: write
+     contents: write
+     pull-requests: write
+     statuses: write
+
    jobs:
      cla:
        runs-on: ubuntu-latest
