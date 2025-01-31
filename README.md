@@ -51,3 +51,19 @@ and automatically exempt bots.
    git push -u origin cla-signatures
    ```
 3. Profit $$$
+
+## Troubleshoot
+
+###  Error: Could not retrieve repository contents: Not Found. Status: 404
+
+If this happened on a repository with no contributors, you can try to create an
+empty contributor file for the action to populate. 
+
+```sh
+git checkout cla-signatures
+mkdir -p signatures/version1/
+echo $'{\n  "signedContributors": []\n}' > signatures/version1/cla.json
+```
+
+Then commit and push. [This](https://github.com/cowprotocol/flash-loan-wrapper-solver/pull/1)
+is an example PR where this workaround helped.
